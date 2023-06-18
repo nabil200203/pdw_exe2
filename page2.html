@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page2.css" />
+    <link rel="stylesheet" href="page2.js" />
+    <title>DOM Javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Pendaftaran Peminatan</h1>
+      </div>
+      <form action="">
+        <fieldset>
+          <legend>Data Pribadi</legend>
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" placeholder="Nama Anda" id="nama" />
+          </div>
+          <div class="form-group">
+            <label for="nim">NIM</label>
+            <input type="text" placeholder="NIM Anda" id="nim" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Peminatan pada Bidang</legend>
+          <div class="form-group">
+            <input
+              type="radio"
+              name="peminatan"
+              id="programming"
+              value="programming"
+            />
+            <label for="programming">Programming</label> <br />
+            <input type="radio" name="peminatan" id="desain" value="desain" />
+            <label for="desain">Desain</label> <br />
+            <input
+              type="radio"
+              name="peminatan"
+              id="jaringan"
+              value="jaringan"
+            />
+            <label for="jaringan">Jaringan</label><br />
+            <input type="radio" name="peminatan" id="data" value="data" />
+            <label for="data">Data</label><br />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informasi Tambahan</legend>
+          <div class="form-group">
+            <label for="alamat">Alamat</label><br />
+            <textarea
+              placeholder="Tulis alamatmu disini"
+              name="alamat"
+              id="alamat"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="angkatan">Pilih Angkatan</label>
+            <select id="angkatan">
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tanggal">Tanggal</label><br />
+            <input type="date" id="tanggal" />
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <button type="submit" onclick="kirimData()">Kirim</button>
+        </div>
+      </form>
+    </div>
+    <script src="page2.js"></script>
+
+    <section>
+        <div class="btn">
+            <button class="page2"><a href="page1.html">Back</a></button>
+        </div>
+    </section>
+
+  </body>
+</html>
